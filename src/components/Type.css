@@ -1,0 +1,243 @@
+.App {
+  text-align: center;
+  width: 385px;
+  /* background: linear-gradient(180deg, #FF0000 0%, #882727 100%); */
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35.16px;
+  text-align: center;
+  color: #FFCB05;
+  /* border: 2px solid #2C72B8; */
+
+
+}
+
+.third-container h3 {
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  background-color : #fff !important; 
+}
+.third-container {
+
+
+}
+
+
+#root {
+  justify-content: center;
+    display: flex;
+}
+.first-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.App-header {
+  background-color: red;
+  padding: 20px;
+}
+
+.pokemon-logo {
+  width: 150px; 
+}
+
+.logoes {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+.pokemonListContainer {
+  /* background-color: #f8f9fa; */
+  padding: 20px;
+   background: linear-gradient(180deg, #FF0000 0%, #882727 100%);
+   border-radius: 30px;
+}
+
+
+
+
+/* Custom styles for each Pokemon type button */
+.btn-bug { background-color: #3BB900; color: white; }
+.btn-dark { background-color: #1C1C1C; color: white; }
+.btn-dragon { background-color: #6F35FC; color: white; }
+.btn-electric { background-color: #F7D02C; color: black; }
+.btn-fairy { background-color: #D685AD; color: white; }
+.btn-fighting { background-color: #E40000; color: white; }
+.btn-fire { background-color: #EE8130; color: white; }
+.btn-flying { background-color: #A98FF3; color: white; }
+.btn-ghost { background-color: #735797; color: white; }
+.btn-grass { background-color: #7AC74C; color: white !important ; }
+.btn-ground { background-color: #E2BF65; color: black; }
+.btn-ice { background-color: #96D9D6; color: black; }
+.btn-normal { background-color: #A8A77A; color: black; }
+.btn-plant { background-color: #48D1CC; color: white; }
+.btn-poison { background-color: #A33EA1; color: white; }
+.btn-psychic { background-color: #F95587; color: white; }
+.btn-rock { background-color: #E1B237; color: white; }
+.btn-steel { background-color: #B7B7CE; color: black; }
+.btn-water { background-color: #00A0E4; color: white; }
+
+
+/* text color start  */
+.btn-bug1 { background-color: white; color:  #3BB900; }
+.btn-dark2 { background-color: white; color: #1C1C1C; }
+.btn-dragon3 { background-color: white; color: #6F35FC; }
+.btn-electric4 { background-color: white; color: #F7D02C; }
+.btn-fairy5 { background-color: white; color: #D685AD; }
+.btn-fighting6 { background-color: white; color: #E40000; }
+.btn-fire7 { background-color: white; color: #EE8130; }
+.btn-flying8 { background-color: white; color: #A98FF3; }
+.btn-ghost9 { background-color: white; color: #735797; }
+.btn-grass10 { background-color: white; color: #7AC74C !important ; }
+.btn-ground11 { background-color: white; color: #E2BF65; }
+.btn-ice12 { background-color: white; color: #96D9D6; }
+.btn-normal13 { background-color: white; color: #A8A77A; }
+.btn-plant14 { background-color: white; color: #48D1CC; }
+.btn-poison15 { background-color:white; color: #A33EA1; }
+.btn-psychic16 { background-color: white; color: #F95587; }
+.btn-rock17 { background-color: white; color: #E1B237; }
+.btn-steel18 { background-color: white; color: #B7B7CE; }
+.btn-water19 { background-color: white; color: #00A0E4; }
+
+
+/* Define the background color for the stat-bar when each type class is applied */
+.btn-bug1.stat-bar { background-color:   #3BB900; color:; }
+.btn-dark2.stat-bar { background-color: #1C1C1C; color: ; }
+.btn-dragon3.stat-bar { background-color: #6F35FC; color: ; }
+.btn-electric4.stat-bar { background-color: #F7D02C; color: ; }
+.btn-fairy5.stat-bar { background-color: #D685AD;  }
+.btn-fighting6.stat-bar { background-color:  #E40000;  }
+.btn-fire7.stat-bar { background-color:  #EE8130;  }
+.btn-flying8.stat-bar { background-color: #A98FF3; color: ; }
+.btn-ghost9.stat-bar { background-color: #735797; color: ; }
+.btn-grass10.stat-bar { background-color: #7AC74C; color:  !important ; }
+.btn-ground11.stat-bar { background-color: #E2BF65; color: ; }
+.btn-ice12.stat-bar { background-color: #96D9D6; color: ; }
+.btn-normal13.stat-bar { background-color: #A8A77A; color: ; }
+.btn-plant14.stat-bar { background-color: #48D1CC; color: ; }
+.btn-poison15.stat-bar { background-color: #A33EA1; color: ; }
+.btn-psychic16.stat-bar { background-color: #F95587; color: ; }
+.btn-rock17.stat-bar { background-color: #E1B237; color: ; }
+.btn-steel18.stat-bar { background-color: #B7B7CE; color: ; }
+.btn-water19.stat-bar { background-color: #00A0E4; color: ; }
+
+
+
+/* Adjust button size and spacing */
+.btn-pokemon-type {
+  width: 120px;
+  margin: 5px;
+  border-radius: 21px;
+  text-align: center;
+  
+}
+
+/* Container to align buttons */
+.pokemon-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Region button css start  */
+
+.region-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* padding: 20px; */
+}
+
+.region-btn {
+  width: 134px;
+  height: 42px;
+  margin: 10px;
+  border: 3px solid;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-btn {
+  width: 50%;
+  height: 42px;
+  margin: 10px;
+  border: 5px solid;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  padding: 3px;
+}
+.close-logo {
+  width: 22px;
+}
+/* Custom styles for each button */
+.btn-kanto { border-color: #A0E515; color: #A0E515; }
+.btn-johto { border-color: #FF6347; color: #FF6347; }
+.btn-hoenn { border-color: #00FFFF; color: #00FFFF; }
+.btn-sinnoh { border-color: #FF4500; color: #FF4500; }
+.btn-teselia { border-color: #FF69B4; color: #FF69B4; }
+.btn-kalos { border-color: #FF8C00; color: #FF8C00; }
+.btn-alola { border-color: #FF7D54; color: #FF7D54; }
+.btn-galar { border-color: #9400D3; color: #9400D3; }
+
+.btn-search {border-color: #2C72B8; color: #2C72B8; background-color: #F7D02C;}
+
+.region-btn:hover {
+  background-color: #282c34;
+  color: white;
+}
+
+.menuss {
+  align-items: center;
+  display: flex;
+}
+
+.modess {
+  align-items: center;
+  display: flex;
+}
+
+
+.header {
+  display: flex;
+  gap: 6%;
+  /* align-items: center; */
+}
+
+.poke_logo {
+  width: 35px;
+  height: 35px;
+}
+
+.top_heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+    line-height: 32px;
+    /* text-align: left; */
+    font-size: 34px;
+    color: #FFFFFF;
+}
+
+
+
+

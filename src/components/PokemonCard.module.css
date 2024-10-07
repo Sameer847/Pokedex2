@@ -1,0 +1,289 @@
+.App {
+  text-align: center;
+  width: 385px;
+  /* background: linear-gradient(180deg, #FF0000 0%, #882727 100%); */
+}
+#root {
+  justify-content: center;
+    display: flex;
+}
+.first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    margin-bottom: 20px;
+}
+.Hash_name {
+  padding: 10px 10px;
+    float: right;
+}
+
+/* .border {
+  width: 100%;
+    height: 7%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    max-width: 104%;
+    max-height: 120px;
+    background: aqua;
+    border-radius: 18px;
+} */
+
+.App-header {
+  background-color: red;
+  padding: 20px;
+}
+
+.pokemon-logo {
+  width: 150px; 
+}
+
+.menu-logo {
+  width: 24px; /* or any other value */
+}
+.menu {
+  align-items: center;
+  display: flex;
+}
+.search {
+  align-items: center;
+  display: flex;
+}
+.mode {
+  align-items: center;
+  display: flex;
+}
+
+.Sort {
+  height: 44px !important;
+  width: 44px !important;
+  background-color: white !important;
+  border-radius: 50% !important;
+}
+/* .pokemon_card img {
+  max-width: 100%; 
+  max-height: 120px; 
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto;
+} */
+
+.pokemon_card_img {
+  max-width: 100%; 
+  max-height: 237px; 
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto;
+}
+
+.pokemonListContainerss {
+  /* background-color: #f8f9fa; */
+  padding: 29px 24px 24px 24px;
+   background: linear-gradient(180deg, #DC0A2D 0%, #DC0A2D 100%);
+   border-radius: 30px;
+
+   height: 80vh; /* or 100vh if it should take the entire viewport */
+  overflow-y: scroll;
+}
+
+.search-bar {
+  /* margin-bottom: 20px; */
+  width: 234px;
+  align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.search-bar input {
+  /* width: 80%; */
+  padding: 1px 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  width: 224px;
+}
+
+.pokemonlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 20px; */
+  gap: 49px 21px;
+}
+/* Box shadow to gradient start here */
+/* .pokemon_card {
+  border-radius: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+
+  width: 41%;
+  height: 108px;
+
+  text-align: center;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  background: linear-gradient(0deg, #EFEFEF 33%, #FFFFFF 10%, #FFFFFF 100%);
+
+
+} */
+
+/* .pokemon_card {
+  position: relative;
+  border-radius: 18px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 41%;
+  height: 108px;
+  text-align: center;
+  background: #FFFFFF; 
+} */
+
+/* .pokemon_card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 33%; 
+  background-color: #EFEFEF;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  z-index: 1;
+} */
+
+/* .pokemon_card > * {
+  position: relative;
+  z-index: 2;
+} */
+
+/* End  */
+
+
+
+
+.pokemon_card img {
+  /* width: 100px; */
+  top: 3%;
+  position: relative;
+  width: 100%;
+}
+
+.pokemon_info {
+  margin-top: -51px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemon_info h3 {
+  margin: 5px 0;
+  /* font-size: 16px; */
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16.41px;
+}
+
+.pokemon_info span {
+  color: gray;
+  /* font-size: 12px; */
+  align-content: center;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  color : #000000;
+}
+
+.black_theme {
+  /* background: linear-gradient(90deg, #BFDFFF 0%, #001224  100%); */
+  background: linear-gradient(0deg, white 23%, #BFDFFF 10%, #001224 100%);
+}
+
+/* responsive css start  */
+
+@media (min-width: 768px) {
+  /* .App {
+    width: 60% !important;
+} */
+
+.pokemon_card {
+  border-radius: 18px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5), 
+  -5px -5px 15px rgba(128, 128, 128, 0.5); /* Apply shadow to all sides including top */
+  /* padding: 10px; */
+  width: 31%;
+  height: 296px;
+  text-align: center;
+  /* background: linear-gradient(90deg, #FFE1C6 0%, #FFCB05 100%); */
+  /* background: linear-gradient(0deg, white 23%, #FFCB05 10%, #FFE1C6 100%); */
+}
+
+.border {
+  bottom: 72px;
+  position: relative;
+  /* width: 100%; */
+    height: 40%;
+    /* object-fit: contain; */
+    /* display: block; */
+    /* margin: 0 auto; */
+    max-width: 104%;
+    max-height: 120px;
+    background: #EFEFEF;
+    border-radius: 18px;
+}
+ .pokemonListContainerss {
+  height: 134rem;
+ }
+ .black_theme {
+  /* background: linear-gradient(90deg, #BFDFFF 0%, #001224  100%); */
+  background: linear-gradient(0deg, white 23%, #BFDFFF 10%, #001224 100%);
+}
+.pokemon_info  {
+  top: 80px;
+    position: relative;
+  /* margin-top: -111px; */
+  margin: -13px 69px;
+  display: flex;
+    justify-content: center;
+}
+.pokemonlist {
+  padding-top: 5%;
+  gap: 91px 21px;
+  background-color: #FFFFFF;
+  border-radius: 18px;
+}
+
+.pokemon_card img {
+  z-index: 1;
+  /* top: -129px; */
+  /* width: 67%; */
+}
+}
+
+
+/* For tablet view  */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* Styles for screens between 425px and 768px */
+  .pokemon_info { 
+    margin-top: -2%;
+    /* margin-top: -51px !important; */
+  }
+}
+
+/* Pokedex-2 css start here  */
+
+.header {
+  display: flex;
+  gap: 6%;
+}
+
+/* .poke_logo {
+  width: 24px;
+  height: 24px;
+} */
+

@@ -1,0 +1,25 @@
+.pokemon-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pokemon-image img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-info h2 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.pokemon-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}

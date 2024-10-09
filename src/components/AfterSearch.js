@@ -6,6 +6,7 @@ import { Link, useLocation } from "react-router-dom"; // Import useLocation to g
 import { useTheme } from "../components/ThemeContext";
 import back from "../assets/back_arrow.png"; // Importing assets
 import pokeball from "../assets/pokeball.png";
+import Pokedex from "../assets/Pokedex.png";
 
 const AfterSearch = ({ types = [] }) => {
   const { state } = useLocation(); // Access passed state (Pokémon details)
@@ -44,48 +45,50 @@ const AfterSearch = ({ types = [] }) => {
     toggleTheme(); // Toggle theme using context
   };
 
-  return (
-    <div
-      className={`pokemon-list-container ${matchedText.length > 0 ? matchedText[0].className : ""}`}
-    >
-      <div className="first-container">
-        <Link to="/type" className="menus">
-          <div className="menu">
-            <img src={back} alt="Back Logo" className="back-logo" />
-          </div>
-        </Link>
-
-        <div className="search">
-          <h3>{pokemon?.name}</h3>
+return (
+  <div
+    className={`pokemon-list-container ${matchedText.length > 0 ? matchedText[0].className : ""}`}
+  >
+    <div className="first-container">
+      <Link to="/type" className="menus">
+        <div className="menu">
+          <img src={back} alt="Back Logo" className="back-logo" />
         </div>
+      </Link>
 
-        <div className="mode">
-          <h3>#00{pokemon?.id}</h3>
-        </div>
+      <div className="search">
+        <h3>{pokemon?.name}</h3>
       </div>
-{/* 
-      <div classNa5me="second-container">
-      <img src={pokeball} alt="Pokemon Logo" className="" />
-      </div> */}
 
-      <div className="pokemon-results-container">
-        {pokemon ? (
-          <PokemonFinalCard
-            id={pokemon.id}
-            name={pokemon.name}
-            image={pokemon.image}
-            types={pokemon.types}
-            stats={pokemon.stats}
-            height={pokemon.height}
-            weight={pokemon.weight}
-            moves={pokemon.moves}
-          />
-        ) : (
-          <p>No Pokémon data available.</p>
-        )}
+      <div className="mode">
+        <h3>#00{pokemon?.id}</h3>
       </div>
     </div>
-  );
+
+    {/* Swap these two containers */}
+    <div className="second-container">
+      <img src={Pokedex} alt="Pokemon Logo" className="Trans_pokedex" />
+    </div>
+
+    <div className="pokemon-results-container">
+      {pokemon ? (
+        <PokemonFinalCard
+          id={pokemon.id}
+          name={pokemon.name}
+          image={pokemon.image}
+          types={pokemon.types}
+          stats={pokemon.stats}
+          height={pokemon.height}
+          weight={pokemon.weight}
+          moves={pokemon.moves}
+        />
+      ) : (
+        <p>No Pokémon data available.</p>
+      )}
+    </div>
+  </div>
+);
+
 };
 
 export default AfterSearch;

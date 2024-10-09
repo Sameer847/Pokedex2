@@ -81,7 +81,7 @@ const PokemonFinalCard = ({
 
       {/* <h3>{types}</h3> */}
       {/* <h3>Types: {types.join(", ")}</h3> */}
-      <br />
+     
       <div className="sec-container">
         <div className="pokemon-button-container">
           {matchedTypes.map((type, index) => (

@@ -84,6 +84,7 @@
 .search {
   align-items: center;
   display: flex;
+  width: 15%;
 }
 .search h3 {
   color: #fff;
